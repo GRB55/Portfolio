@@ -5,25 +5,25 @@ Esta carpeta contiene una colección de proyectos realizados para el aprendizaje
 
 Cada subcarpeta dentro de este directorio corresponde a un lenguaje o herramienta específica y contiene los proyectos relacionados. La organización es la siguiente:
 
-- Python/
+- **Python/**
 
     - Scripts y notebooks.
 
     - Proyectos de Machine Learning, análisis de datos y visualizaciones.
 
-- R/
+- **R/**
 
     - Código para análisis estadístico y generación de visualizaciones.
 
     - Ejercicios con Tidyverse y ggplot2.
 
-- SQL/
+- **SQL/**
 
     - Scripts de consultas y manipulación de bases de datos.
 
     - Ejercicios para optimizar consultas y generar reportes.
 
-- PowerBI/
+- **PowerBI/**
 
     - Dashboards interactivos y reportes visuales basados en diferentes conjuntos de datos.
 
