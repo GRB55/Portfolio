@@ -1,38 +1,123 @@
-# Portafolio de Proyectos de Programación y Análisis de Datos
+# 📊 Data Analytics Portfolio
 
-## Descripción General
-Este repositorio recopila una variedad de proyectos diseñados para demostrar habilidades en programación, análisis de datos y visualización. Los proyectos están organizados por herramienta o lenguaje, abarcando desde Python y R hasta SQL y Power BI, y reflejan tanto el aprendizaje como la aplicación práctica de estas tecnologías.
+Bienvenido a mi portafolio de análisis de datos, donde destaco proyectos clave que demuestran mis habilidades en SQL, Power BI, Python y R. Cada proyecto incluye análisis detallados, tableros interactivos y hallazgos clave respaldados por datos.
 
-## Estructura del Repositorio
-Cada subcarpeta corresponde a un lenguaje o herramienta específica y contiene proyectos relevantes:
+## 🛠️ Tools Used
+- **Languages**: SQL 🗂️, Python 🐍, R 📊
+- **Visualization**: Power BI 📊
+- **Libraries**:
+  - Python: Pandas 🐼 , NumPy 🔢, Matplotlib 📊, Seaborn 🌊, Scikit-learn 🤖.
+  - R: tidyverse 🧹, dplyr 🔧, DescTools 🔍, lubridate ⏱️, forecast⏳, ggplot 🎨, caret 🧠, plotly 📈.
+- **Databases**: Microsoft SQL Server🗂️.
 
-### **Python/**
-- Scripts y notebooks.
-- Proyectos de Machine Learning, análisis de datos y visualizaciones interactivas.
+## 🏟️ Online Sports Revenue Analysis
 
-### **R/**
-- Código para análisis estadístico y generación de gráficos.
-- Ejercicios prácticos con Tidyverse y ggplot2.
+### Descripción
 
-### **SQL/**
-- Scripts para consultas y manipulación de bases de datos.
-- Ejercicios enfocados en la optimización de consultas y generación de reportes útiles.
+Análisis detallado de los ingresos de un negocio deportivo en línea, enfocado en identificar tendencias clave, segmentos de clientes rentables y estrategias de optimización de ingresos.
 
-### **Power BI/**
-- Dashboards interactivos y reportes visuales creados a partir de diversos conjuntos de datos.
+### Herramientas Utilizadas
 
-## Uso
-1. **Explora el repositorio:** Navega hasta la subcarpeta del lenguaje o herramienta de tu interés.
-2. **Revisa los proyectos:** Cada proyecto incluye documentación adicional para facilitar su comprensión y reutilización.
-3. **Adapta los recursos:** Utiliza el código, scripts o dashboards como referencia o punto de partida para tus propios desarrollos.
+- **SQL:** Consultas para extracción, transformación y análisis de datos.
 
-## Propósito
-Este portafolio está diseñado para:
-- **Demostrar competencias clave:** Mostrar habilidades en análisis de datos, programación y visualización mediante proyectos prácticos.
-- **Proveer soluciones funcionales:** Presentar ejemplos reutilizables que destacan técnicas avanzadas y enfoques innovadores.
-- **Fomentar el aprendizaje continuo:** Facilitar la colaboración y el desarrollo profesional mediante la aplicación de estos proyectos en contextos reales.
+- **Power BI:** Tableros interactivos para visualización de tendencias y hallazgos.
 
-## Contacto
-Si tienes preguntas, sugerencias o deseas colaborar, no dudes en contactarme a través de mi perfil de GitHub o por correo electrónico.
+### Resultados Clave
 
-¡Espero que este portafolio sea útil e inspirador para tu propio aprendizaje y crecimiento profesional! 🌟
+- **Identificación de clientes leales:** Segmentos que contribuyen significativamente a los ingresos.
+
+- **Patrones de ingresos:** Crecimiento sostenido en temporadas deportivas clave.
+
+- **Optimización de categorías:** Categorías de productos con margen de ganancia bajo ajustadas para maximizar ganancias.
+
+### Tableros y Visualizaciones
+
+Este tablero interactivo muestra las tendencias de ingresos, los clientes principales y el impacto de las campañas de marketing.
+
+# 🛒 Super Store Orders Analysis
+
+## Descripción
+
+Exploración de las operaciones de una cadena de tiendas, con un enfoque en el análisis de ventas, rentabilidad, y estrategias de envío.
+
+### Herramientas Utilizadas
+
+- **SQL:** Análisis de rendimiento de ventas, segmentos de clientes y eficiencia de envío.
+
+- **Power BI:** Tableros visuales para destacar patrones clave.
+
+### Resultados Clave
+
+- **Productos más vendidos:** Identificación de productos y categorías líderes en ventas.
+
+- **Eficiencia de envío:** Modos de envío más rentables y su impacto en la satisfacción del cliente.
+
+- **Análisis por regiones:** Contribución de cada región y mercado a las ganancias totales.
+
+- **Tableros y Visualizaciones**
+
+- **Visualización de ventas por categoría, segmentación de clientes y métricas de envío.**
+
+## 🚀 Contacto
+
+Si te interesa conocer más sobre estos proyectos o colaborar en futuros análisis, no dudes en contactarme:
+
+📧 Correo: gonzaloriosbarcelo@gmail.com
+
+🌐 LinkedIn: Gonzalo Ríos Barceló
+
+---
+
+# 📊 Portfolio: Data Analysis Projects
+
+## 🏅 Online Sports Revenue Analysis
+### Project Overview
+This project focuses on analyzing revenue data for an online sports business. The goal was to identify trends, key performance indicators, and actionable insights for improving sales and profitability.
+
+### Key Highlights
+- **SQL Analysis**: 
+  - **Data Cleaning**: Removed null values and standardized datasets for consistency. 🔍
+  - **Exploratory Data Analysis**: Uncovered patterns such as top-selling products, revenue by discount levels, and customer reviews. 📈
+  - **Profitability Insights**: Identified the most profitable products, best customer segments, and optimal price points. 💰
+
+- **Power BI Dashboards**:
+  - Visualized revenue trends by brand, product, and discount levels.
+  - Created interactive reports to explore relationships between reviews, revenue, and product ratings. 📊
+
+### Recommendations
+- Focus on products with high reviews and ratings to boost sales. 🌟
+- Optimize discount strategies to maximize revenue without compromising profitability.
+- Invest in promoting products with untapped potential in underperforming categories.
+
+---
+
+## 🏪 Super Store Orders Analysis
+### Project Overview
+This project involved analyzing sales, customer segments, and shipping performance for a retail dataset to drive decision-making and optimize business strategies.
+
+### Key Highlights
+- **SQL Analysis**: 
+  - **Data Cleaning**: Ensured data consistency and handled missing values. 🧹
+  - **Exploratory Data Analysis**: Investigated top-selling products, customer segments, and shipping modes. 📦
+  - **Trend Analysis**: Uncovered sales growth patterns over time and regional performance metrics. 🌍
+  - **Profitability Analysis**: Evaluated the impact of discounts and shipping costs on profitability. 💵
+
+- **Power BI Dashboards**:
+  - Visualized sales and profit trends by category, sub-category, and region.
+  - Highlighted customer segmentation insights with interactive visuals. 🎨
+
+### Recommendations
+- Enhance shipping efficiency in regions with high order delays. 🚚
+- Reevaluate discounts for low-margin products to improve profitability.
+- Focus marketing efforts on the "Consumer" segment, which drives the highest sales. 👥
+
+---
+
+## 🚀 Contact
+
+📧 Mail: gonzaloriosbarcelo@gmail.com
+
+🌐 LinkedIn: Gonzalo Ríos Barceló
+---
+
+Feel free to reach out for collaboration or to explore my portfolio further! 💼
