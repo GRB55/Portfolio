@@ -1,14 +1,14 @@
-# 📊 Data Analytics Portfolio
+# 📊💼 Data Analytics Portfolio
 
 Bienvenido a mi portafolio de análisis de datos, donde destaco proyectos clave que demuestran mis habilidades en SQL, Power BI, Python y R. Cada proyecto incluye análisis detallados, tableros interactivos y hallazgos clave respaldados por datos.
 
-## 🛠️ Tools Used
-- **Languages**: SQL 🗂️, Python 🐍, R 📊
-- **Visualization**: Power BI 📊
-- **Libraries**:
+## 🛠️ Herramientas usadas:
+- **Lenguajes**: SQL 🗂️, Python 🐍, R 📊
+- **Visualización**: Power BI 📊
+- **Librerías**:
   - Python: Pandas 🐼 , NumPy 🔢, Matplotlib 📊, Seaborn 🌊, Scikit-learn 🤖.
   - R: tidyverse 🧹, dplyr 🔧, DescTools 🔍, lubridate ⏱️, forecast⏳, ggplot 🎨, caret 🧠, plotly 📈.
-- **Databases**: Microsoft SQL Server🗂️.
+- **Bases de Datos**: Microsoft SQL Server🗂️.
 
 ## 🏟️ Online Sports Revenue Analysis
 
@@ -34,9 +34,9 @@ Análisis detallado de los ingresos de un negocio deportivo en línea, enfocado 
 
 Este tablero interactivo muestra las tendencias de ingresos, los clientes principales y el impacto de las campañas de marketing.
 
-# 🛒 Super Store Orders Analysis
+## 🛒 Super Store Orders Analysis
 
-## Descripción
+### Descripción
 
 Exploración de las operaciones de una cadena de tiendas, con un enfoque en el análisis de ventas, rentabilidad, y estrategias de envío.
 
@@ -62,13 +62,22 @@ Exploración de las operaciones de una cadena de tiendas, con un enfoque en el a
 
 Si te interesa conocer más sobre estos proyectos o colaborar en futuros análisis, no dudes en contactarme:
 
-📧 Correo: gonzaloriosbarcelo@gmail.com
+- 📧 Correo: gonzaloriosbarcelo@gmail.com
 
-🌐 LinkedIn: Gonzalo Ríos Barceló
+- 🌐 LinkedIn: Gonzalo Ríos Barceló
 
 ---
 
 # 📊 Portfolio: Data Analysis Projects
+
+## 🛠️ Tools used:
+- **Languages**: SQL 🗂️, Python 🐍, R 📊
+- **Visualization**: Power BI 📊
+- **Libraries**:
+  - Python: Pandas 🐼 , NumPy 🔢, Matplotlib 📊, Seaborn 🌊, Scikit-learn 🤖.
+  - R: tidyverse 🧹, dplyr 🔧, DescTools 🔍, lubridate ⏱️, forecast⏳, ggplot 🎨, caret 🧠, plotly 📈.
+- **Databases**: Microsoft SQL Server🗂️.
+
 
 ## 🏅 Online Sports Revenue Analysis
 ### Project Overview
@@ -115,9 +124,7 @@ This project involved analyzing sales, customer segments, and shipping performan
 
 ## 🚀 Contact
 
-📧 Mail: gonzaloriosbarcelo@gmail.com
+- 📧 Mail: gonzaloriosbarcelo@gmail.com
 
-🌐 LinkedIn: Gonzalo Ríos Barceló
+- 🌐 LinkedIn: Gonzalo Ríos Barceló
 ---
-
-Feel free to reach out for collaboration or to explore my portfolio further! 💼
