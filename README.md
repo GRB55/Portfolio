@@ -37,13 +37,13 @@ Cada subcarpeta dentro de este directorio corresponde a un lenguaje o herramient
 
 # Propósito
 
-El propósito principal de esta carpeta es:
+Este repositorio está diseñado para:
 
-- Consolidar aprendizajes y prácticas en ciencia de datos.
+1. **Demostrar competencias en Ciencia de Datos mediante proyectos prácticos y resultados tangibles.**
 
-- Proveer ejemplos funcionales que puedan ser adaptados o extendidos.
+2. **Proveer soluciones funcionales que destacan habilidades en análisis de datos, visualización y modelado predictivo.**
 
-- Facilitar la colaboración y compartición de conocimiento.
+3. **Evidenciar adaptabilidad y enfoque colaborativo, facilitando el aprendizaje continuo y la aplicación en contextos reales.**
 
 # Contacto
 
