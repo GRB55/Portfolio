@@ -1,0 +1,268 @@
+---
+title: "Regresión Lineal"
+output: html_notebook
+---
+```{r}
+# Cargamos librerias
+library(tidyverse) # Manejo y transformación de datos, gráficos
+library(plotly) # Gráficos interactivos
+library(broom) # Métricas para regresión simple (R2, RMSE, etc)
+library(corrplot) # Gráfico de correlación
+library(Metrics) # Más métricas (MAE por ej)
+library(cowplot) # Grilla para graficar
+```
+
+```{r}
+# Carga de datos
+ruta <- choose.files()
+
+medical_bills <- read_csv(ruta)
+```
+
+```{r}
+# Primera vista de los datos
+head(medical_bills)
+```
+```{r}
+# Dimensiones del dataset
+cat("Cantidad de filas:", dim(medical_bills)[1], "\n")
+cat("Cantidad de columnas:", dim(medical_bills)[2], "\n")
+cat("Cantidad de datos:", dim(medical_bills)[1] * dim(medical_bills)[2])
+```
+```{r}
+# Estadisticas del dataset
+summary(medical_bills)
+```
+```{r}
+# Valores nulos
+colSums(is.na(medical_bills))
+```
+```{r}
+# Valores duplicados
+sum(duplicated(medical_bills))
+```
+```{r}
+# Eliminamos valores duplicados
+medical_bills <- medical_bills[!duplicated(medical_bills), ]
+```
+
+```{r}
+# Variables categóricas
+categoricas <- c()
+
+for(i in 1:ncol(medical_bills)){
+  if(is.character(medical_bills[[i]])){
+    categoricas <- c(categoricas, names(medical_bills)[i])
+  }
+}
+
+cat("Cantidad de variables categóricas:", length(categoricas), "\n")
+cat("Columnas categóricas:", categoricas)
+```
+```{r}
+# Valores únicos de variables categóricas
+sapply(medical_bills[, categoricas], unique)
+```
+
+```{r}
+# Cardinalidad de variables categóricas
+sapply(medical_bills[, categoricas], function(x) length(unique(x)))
+```
+
+
+```{r}
+# Frecuencias de variables categóricas
+sapply(medical_bills[, categoricas], table)
+```
+```{r}
+# Variables numéricas
+numericas <- c()
+
+for(i in 1:ncol(medical_bills)){
+  if(is.numeric(medical_bills[[i]])){
+    numericas <- c(numericas, names(medical_bills)[i])
+  }
+}
+cat("Cantidad de columnas numéricas:", length(numericas), "\n")
+cat("Columnas numéricas:", numericas)
+```
+```{r}
+# Distribución de columnas numéricas
+medical_bills %>%
+  select(numericas) %>%
+  gather(key="variable", value="valor") %>%
+  ggplot(aes(x=valor)) +
+  geom_histogram(color="black",fill="yellowgreen", bins=20) +
+  facet_wrap(~variable, scales="free") +
+  theme_bw()
+```
+```{r}
+# Outliers en variables numéricas
+medical_bills %>%
+  select(numericas) %>%
+  gather(key="variable", value="valor") %>%
+  ggplot(aes(y=valor)) +
+  geom_boxplot(fill="yellowgreen") +
+  facet_wrap(~variable, scales="free") +
+  theme_bw()
+```
+```{r}
+# Correlación de variables
+correlacion <- cor(medical_bills[, numericas])
+
+corrplot(correlacion, method="circle", bg="black", title="Correlación de variables",
+         tl.col="black", addCoef.col="white")
+```
+```{r}
+x = medical_bills %>%
+  ggplot(aes(x=age, y=charges)) +
+  geom_jitter(color="purple", alpha=0.7) +
+  ggtitle("Relación entre edad y cargos") +
+  theme_bw() +
+  theme(plot.title=element_text(hjust=0.5, face="bold", size=8))
+
+y = medical_bills %>%
+  ggplot(aes(x=bmi, y=charges)) +
+  geom_jitter(color="pink", alpha=0.7) +
+  ggtitle("Relación entre BMI y cargos") +
+  theme_bw() +
+  theme(plot.title=element_text(hjust=0.5, face="bold", size=8))
+
+z = medical_bills %>%
+  ggplot(aes(x=children, y=charges, color=children)) +
+  geom_jitter(alpha=0.7, show.legend=F) +
+  ggtitle("Relación entre cant. de hijos y cargos") +
+  theme_bw() +
+  theme(plot.title=element_text(hjust=0.5, face="bold", size=7))
+
+plot_grid(x, y, z, nrow=1)
+```
+
+```{r}
+# Cargos para fumadores
+medical_bills %>%
+  ggplot(aes(x=charges, fill=smoker)) +
+  geom_histogram(color="black", bins=20, show.legend=F) +
+  facet_wrap(~smoker, scales="free", labeller=as_labeller(c("no"="Non Smoker", "yes"="Smoker")))+
+  labs(title="Distribución de cargos médicos") +
+  theme_minimal() +
+  theme(plot.title=element_text(hjust=0.5))
+```
+```{r}
+# Cargos por región
+medical_bills %>%
+  ggplot(aes(x=charges, fill=region)) +
+  geom_histogram(color="black", bins=20, show.legend=F)+
+  labs(title="Distribución de cargos médicos") +
+  facet_wrap(~region, scales="free")+
+  theme_minimal() +
+  theme(plot.title=element_text(hjust=0.5))
+```
+```{r}
+# Cargos por género
+medical_bills %>%
+  ggplot(aes(x=charges, fill=sex)) +
+  geom_histogram(color="black", bins=20, show.legend=F)+
+  labs(title="Distribución de cargos médicos") +
+  facet_wrap(~sex, scales="free") +
+  theme_minimal() +
+  theme(plot.title=element_text(hjust=0.5))
+```
+```{r}
+# Cargos por region, fumador y sexo
+medical_bills %>%
+  ggplot(aes(x=charges, fill=sex)) +
+  geom_histogram(color="black", position="dodge", bins=8)+
+  facet_grid(smoker ~ region, scales="free", labeller=label_both) +
+  labs(title="Distribución de cargos médicos") +
+  theme_minimal() +
+  guides(color=guide_legend(ncol=2)) +
+  theme(plot.title=element_text(hjust=0.5),
+        legend.position = "bottom",
+        legend.title=element_text(size=0))
+```
+**Fórmula Teórica Regresión Lineal:**
+$$
+Y = \beta_0 + \beta_1X
+$$
+**Fórmula para realizar predicciones:**
+$$
+\hat{y} = \hat{\beta_0} + \hat{\beta_1}x
+$$
+```{r}
+# Encodear variables categóricas
+medical_bills <- medical_bills %>%
+  mutate(smoker = ifelse(smoker == "yes", 1, 0)) %>%
+  mutate(sex = ifelse(sex == "female", 1, 0))
+
+cor(medical_bills %>% select(-region))
+```
+
+
+```{r}
+library(caret)
+# Conjunto de entrenamiento y prueba
+X <- medical_bills %>%
+  select(-c(region, charges))
+y <- medical_bills$charges
+
+indice <- createDataPartition(y, p=0.7, list=F)
+X_train <- X[indice, ]
+y_train <- y[indice]
+X_test <- X[-indice, ]
+y_test <- y[-indice]
+
+cat("Dimensiones X_train:", dim(X_train), "\n")
+cat("Dimensiones X_test:", dim(X_test))
+```
+
+```{r}
+# Modelado
+charges_regression <- lm(y_train ~ ., data=data.frame(y_train, X_train))
+
+summary(charges_regression)
+```
+
+```{r}
+# Más métricas
+glance(charges_regression)
+```
+```{r}
+# Coeficientes
+coef(charges_regression)
+```
+
+```{r}
+# Predicciones
+pred_reg <- predict(charges_regression, X_test)
+```
+
+```{r}
+# Graficamos la regresión
+ggplot(data=NULL, aes(x=pred_reg, y=y_test)) +
+  geom_point(color="blue", alpha=0.7) +
+  geom_abline(color="red", linewidth=1) +
+  ggtitle("Predicción vs. Valores reales") +
+  labs(x="Predicción", y="Valores reales") +
+  theme_classic() +
+  theme(plot.title=element_text(hjust=0.5, face="bold"))
+```
+
+```{r}
+# Resultados
+charges_mae <- mae(y_test, pred_reg)
+
+cat("Mean Absolute Error:", charges_mae)
+```
+```{r}
+# Evaluar modelo con nuevos datos
+nuevo_paciente <- data.frame(age=21,
+                             sex=0,
+                             bmi=25,
+                             children=0,
+                             smoker=0)
+
+nueva_pred <- predict(charges_regression, nuevo_paciente)
+
+cat("Un paciente masculino de 21 años, no fumador, sin hijos y con un bmi de 25 tendrá un cargo aproximado de: $", nueva_pred)
+```
