@@ -98,8 +98,6 @@ This project focuses on analyzing revenue data for an online sports business. Th
 - Optimize discount strategies to maximize revenue without compromising profitability.
 - Invest in promoting products with untapped potential in underperforming categories.
 
----
-
 ## 🏪 Super Store Orders Analysis
 ### Project Overview
 This project involved analyzing sales, customer segments, and shipping performance for a retail dataset to drive decision-making and optimize business strategies.
@@ -119,8 +117,6 @@ This project involved analyzing sales, customer segments, and shipping performan
 - Enhance shipping efficiency in regions with high order delays. 🚚
 - Reevaluate discounts for low-margin products to improve profitability.
 - Focus marketing efforts on the "Consumer" segment, which drives the highest sales. 👥
-
----
 
 ## 🚀 Contact
 
