@@ -107,8 +107,6 @@ Si te interesa conocer más sobre estos proyectos o colaborar en futuros anális
 
 ---
 
-# 📊 Portfolio: Data Analysis Projects
-
 ## 🛠️ Tools used:
 - **Languages**: SQL 🗂️, Python 🐍, R 📊
 - **Visualization**: Power BI 📊
