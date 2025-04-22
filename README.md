@@ -58,6 +58,45 @@ Exploración de las operaciones de una cadena de tiendas, con un enfoque en el a
 
 - **Visualización de ventas por categoría, segmentación de clientes y métricas de envío.**
 
+## 🚗 REGRESIÓN LINEAL PRECIO DE AUTOS
+
+### Descripción
+Este proyecto tiene como objetivo realizar un análisis de regresión lineal sobre un conjunto de datos de precios de autos, con el fin de predecir el precio de los vehículos basándose en diversas características, como el año, la marca, el modelo y el kilometraje, entre otras.
+
+### Pasos del Proyecto
+1. **Preparación de los Datos**
+   - Carga de datos, limpieza y análisis exploratorio de las variables.
+2. **Análisis Exploratorio de Datos (EDA)**
+   - Se generan gráficos para observar la distribución de las variables y las relaciones entre ellas.
+3. **Modelado Predictivo**
+   - Se entrena un modelo de regresión lineal para predecir el precio de los autos.
+4. **Evaluación del Modelo**
+   - Evaluación mediante métricas como **R²** y **MAE**.
+
+### Conclusión
+Este proyecto permite predecir el precio de los autos basándose en variables como el modelo, el año y el kilometraje. El análisis y la visualización de los resultados pueden ser útiles para la industria automotriz y los compradores que buscan comprender mejor el valor de un vehículo en el mercado.
+
+## 🏥 REGRESIÓN LINEAL - CARGOS MÉDICOS
+
+### Descripción
+Este proyecto tiene como objetivo realizar un análisis de regresión lineal sobre un conjunto de datos médicos con el fin de predecir los costos médicos (cargos) de los pacientes. El análisis abarca la limpieza, exploración de datos, modelado y evaluación del modelo, con un enfoque en variables como la edad, el índice de masa corporal (BMI), el número de hijos, el sexo, la condición de fumador, y la región geográfica.
+
+### Pasos del Proyecto
+1. **Preparación de los Datos**
+   - Carga de datos, limpieza y transformación de las variables categóricas.
+2. **Análisis Exploratorio de Datos (EDA)**
+   - Se exploran las relaciones entre las variables `charges` y otras variables del dataset.
+3. **Modelado Predictivo**
+   - Se entrena un modelo de regresión lineal para predecir los cargos médicos.
+4. **Evaluación del Modelo**
+   - Se evalúa el modelo utilizando métricas como **R²** y **MAE**.
+
+### Herramientas Utilizadas
+- Librerías en R: `tidyverse`, `plotly`, `broom`, `caret`, entre otras.
+
+### Conclusión
+Este proyecto aplica un modelo de regresión lineal para predecir los costos médicos de los pacientes. Los resultados pueden ser utilizados para comprender mejor los factores que influyen en los costos médicos y para hacer predicciones más informadas sobre los gastos médicos de los pacientes.
+
 ## 🚀 Contacto
 
 Si te interesa conocer más sobre estos proyectos o colaborar en futuros análisis, no dudes en contactarme:
@@ -117,6 +156,45 @@ This project involved analyzing sales, customer segments, and shipping performan
 - Enhance shipping efficiency in regions with high order delays. 🚚
 - Reevaluate discounts for low-margin products to improve profitability.
 - Focus marketing efforts on the "Consumer" segment, which drives the highest sales. 👥
+
+## 🚗 CAR PRICE LINEAR REGRESSION
+
+### Description
+The goal of this project is to perform a linear regression analysis on a car price dataset in order to predict the price of vehicles based on various features, such as the year, make, model, and mileage, among others.
+
+### Project Steps
+1. **Data Preparation**
+   - Data loading, cleaning, and exploratory analysis of the variables.
+2. **Exploratory Data Analysis (EDA)**
+   - Graphs are generated to observe the distribution of variables and the relationships between them.
+3. **Predictive Modeling**
+   - A linear regression model is trained to predict the car prices.
+4. **Model Evaluation**
+   - The model is evaluated using metrics such as **R²** and **MAE**.
+
+### Conclusion
+This project allows for predicting car prices based on variables such as make, model, year, and mileage. The analysis and visualization of the results can be useful for the automotive industry and buyers looking to better understand the value of a vehicle in the market.
+
+## 🏥 MEDICAL CHARGES LINEAR REGRESSION
+
+### Description
+The goal of this project is to perform a linear regression analysis on a medical dataset to predict patients' medical charges. The analysis includes data cleaning, exploration, modeling, and evaluation, focusing on variables such as age, body mass index (BMI), number of children, gender, smoking status, and geographical region.
+
+### Project Steps
+1. **Data Preparation**
+   - Data loading, cleaning, and transformation of categorical variables.
+2. **Exploratory Data Analysis (EDA)**
+   - Exploration of relationships between the `charges` variable and other features in the dataset.
+3. **Predictive Modeling**
+   - A linear regression model is trained to predict medical charges.
+4. **Model Evaluation**
+   - The model is evaluated using metrics like **R²** and **MAE**.
+
+### Tools Used
+- R Libraries: `tidyverse`, `plotly`, `broom`, `caret`, and others.
+
+### Conclusion
+This project applies a linear regression model to predict medical costs for patients. The results can be used to better understand the factors influencing medical costs and make more informed predictions about patient medical expenses.
 
 ## 🚀 Contact
 
