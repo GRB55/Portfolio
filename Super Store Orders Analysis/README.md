@@ -1,6 +1,6 @@
 # Proyecto: Super Store Orders Analysis
 ## **Descripción**
-Este proyecto tiene como objetivo analizar el rendimiento de ventas de una tienda, segmentar clientes, evaluar la eficiencia de los modos de envío y analizar la rentabilidad de las diferentes categorías de productos. Se utilizaron consultas SQL para explorar diversos patrones de ventas, productos populares y la influencia de descuentos en la rentabilidad.
+Este proyecto analiza los pedidos realizados en una tienda (Superstore), enfocándose en la segmentación de clientes, las tendencias de ventas y la rentabilidad de los productos.
 
 ### Herramientas usadas:
 - 🗂️**SQL** para el análisis
