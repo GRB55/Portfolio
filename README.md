@@ -97,6 +97,25 @@ Este proyecto tiene como objetivo realizar un análisis de regresión lineal sob
 ### Conclusión
 Este proyecto aplica un modelo de regresión lineal para predecir los costos médicos de los pacientes. Los resultados pueden ser utilizados para comprender mejor los factores que influyen en los costos médicos y para hacer predicciones más informadas sobre los gastos médicos de los pacientes.
 
+## 🚢 Predicción de Supervivencia en el Titanic
+
+### Descripción
+Este proyecto tiene como objetivo predecir la probabilidad de supervivencia de los pasajeros del Titanic utilizando un conjunto de datos con variables como el género, la clase del pasaje, la edad y el número de hermanos/cónyuges a bordo.
+
+### Pasos del Proyecto
+1. **Preparación de los Datos**
+   - Limpieza de datos, tratamiento de valores faltantes y codificación de variables categóricas.
+2. **Análisis Exploratorio de Datos (EDA)**
+   - Exploración de la distribución de las variables y análisis de correlaciones.
+3. **Modelado Predictivo**
+   - Entrenamiento de varios modelos como Regresión Logística, Árbol de Decisión y Random Forest.
+4. **Evaluación del Modelo**
+   - Evaluación de los modelos usando métricas como **precisión**, **recall** y **F1-score**.
+
+### Conclusión
+El análisis mostró que las variables más relevantes para predecir la supervivencia fueron `Sex`, `Pclass`, `Age` y `Fare`. Los modelos de Random Forest y Árbol de Decisión lograron una alta precisión, ayudando a identificar patrones clave relacionados con la supervivencia de los pasajeros.
+
+
 ## 🚀 Contacto
 
 Si te interesa conocer más sobre estos proyectos o colaborar en futuros análisis, no dudes en contactarme:
@@ -193,6 +212,25 @@ The goal of this project is to perform a linear regression analysis on a medical
 
 ### Conclusion
 This project applies a linear regression model to predict medical costs for patients. The results can be used to better understand the factors influencing medical costs and make more informed predictions about patient medical expenses.
+
+## 🚢 Titanic Survival Prediction
+
+### Description
+The goal of this project is to predict the survival probability of Titanic passengers using a dataset with features like gender, passenger class, age, and the number of siblings/spouses aboard.
+
+### Project Steps
+1. **Data Preparation**
+   - Data cleaning, handling missing values, and encoding categorical variables.
+2. **Exploratory Data Analysis (EDA)**
+   - Exploration of feature distributions and analysis of correlations.
+3. **Predictive Modeling**
+   - Training various models such as Logistic Regression, Decision Trees, and Random Forest.
+4. **Model Evaluation**
+   - Model evaluation using metrics like **accuracy**, **recall**, and **F1-score**.
+
+### Conclusion
+The analysis revealed that the most relevant variables for predicting survival were `Sex`, `Pclass`, `Age`, and `Fare`. Random Forest and Decision Tree models achieved high accuracy, helping to identify key patterns related to passenger survival.
+
 
 ## 🚀 Contact
 
